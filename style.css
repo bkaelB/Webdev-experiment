@@ -1,0 +1,807 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+
+/* PASENSYA NA KASI MAY MEDIA QUERIES KAHIT MAY BOOTSTRAP AAYUSIN KO TO SOON */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.my-custom-body {
+    font-family: 'Poppins', sans-serif;
+    font-size: .938rem;
+    background-color: hsl(206, 4%, 6%);
+    color: white;
+}
+
+.body {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: hsl(206, 4%, 6%) !important;
+}
+
+.navbar-brand img {
+    width: 2.5rem;
+    margin-right: 5px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 35px;
+
+}
+
+.ri-function-line {
+    background-color: white;
+
+}
+
+
+/* Layout */
+
+.main {
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #FFB1A4;
+    width: 20rem;
+    z-index: -1;
+    animation: move 10s ease-in-out infinite;
+    transform-origin: 50% 50%;
+}
+
+
+@keyframes move {
+    0% {
+        transform: scale(1) translate(10px, -10px);
+    }
+
+    38% {
+        transform: scale(0.8, 1) translate(80vw, 10vh) rotate(160deg);
+    }
+
+    40% {
+        transform: scale(0.8, 1) translate(80vw, 5vh) rotate(160deg);
+    }
+
+    78% {
+        transform: scale(1.3) translate(0vw, 20vh) rotate(-20deg);
+    }
+
+    80% {
+        transform: scale(1.3) translate(0vw, 20vh) rotate(-20deg);
+    }
+
+    100% {
+        transform: scale(1) translate(10px, 30px);
+    }
+}
+
+
+/*=============== HOME ===============*/
+
+.home_body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home_img {
+    width: 550px;
+    position: relative;
+    border: #FFF;
+    border-radius: 50px;
+}
+
+.home_data {
+    padding-top: 2rem;
+}
+
+.home_header {
+    position: relative;
+}
+
+.home_title {
+    padding-left: 30px;
+    line-height: 6rem;
+    position: relative;
+    left: 20px;
+    font-size: 7.2rem;
+    background: linear-gradient(to right, #3E95CF 4%, #CF5BB4 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+}
+
+.home_subtitle {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.container_img {
+    width: 45%;
+}
+
+.home_data {
+    width: 50%;
+}
+
+
+/* buttons */
+
+.button {
+    background-color: hsl(240, 22%, 32%);
+    color: #FFF;
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+}
+
+.button:hover {
+    background-color: hsl(300, 16%, 47%);
+}
+
+.button_icon {
+    font-size: 1.2rem;
+}
+
+.button_flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .75rem;
+    text-decoration: none;
+}
+
+
+/* Sponsors */
+
+.sponsor_img {
+    width: 130px;
+    border-radius: 10px;
+    margin-top: 16rem;
+    margin-bottom: 3.5rem;
+
+
+}
+
+
+/* About page */
+
+.about_pagebody {
+    background-color: #EDE9E8;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+}
+
+.about_innovation {
+    padding-top: 235px;
+}
+
+.about_text h7 {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.about_text {
+    padding-top: 100px;
+    display: flex;
+
+}
+
+.text_remark {
+    top: 2.2rem;
+    position: relative;
+}
+
+.iphone_vid {
+    display: flex;
+    margin-top: 110px;
+}
+
+.icon_tough {
+    top: -16rem;
+    font-size: 5rem;
+}
+
+.icon_water {
+    color: #3E95CF;
+    font-size: 5rem;
+    bottom: 6rem;
+    position: relative;
+}
+
+
+/*Items page */
+
+.items_page {
+    height: auto;
+    overflow: hidden;
+}
+
+.container_items {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    border-radius: 50px;
+    border-color: #EDE9E8;
+    border-right-style: dotted;
+    border-left-style: dotted;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.text_overlay {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    margin-top: 6rem;
+    overflow: hidden;
+}
+
+.items_heading {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel img {
+    width: 30rem;
+}
+
+.card-title {
+    color: whitesmoke !important;
+    border-radius: 20px;
+    background: linear-gradient(90deg,
+            hsl(23, 4%, 28%) 0%,
+            hsl(23, 4%, 8%) 100%);
+    width: 75%;
+    padding: 0.5em;
+
+}
+
+.carousel .item img:not(:nth-child(2)) {
+    filter: blur(100px);
+}
+
+/* Footer */
+
+.footer_links {
+    list-style: none;
+    margin: 0;
+    padding-top: 1rem;
+    padding-left: 0;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: hsl(206, 4%, 75%);
+
+}
+
+.footer_logo img {
+    width: 2.5rem;
+    margin-right: 5px;
+}
+
+.footer_links li {
+    margin-bottom: 8px !important;
+}
+
+.footer_copyLink p {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 5.5rem;
+}
+
+.footer_social-link {
+    color: rgb(255, 255, 255);
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1399px) {
+
+    .home_title {
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 6rem;
+        line-height: 5rem;
+
+    }
+
+    .about_innovation {
+        padding-top: 148px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+    .home_title {
+        padding-top: 60px;
+        padding-left: 10px;
+        font-size: 5rem;
+        line-height: 5rem;
+
+
+    }
+
+    .home_img {
+        top: 3rem;
+        width: 430px;
+    }
+
+    .home_subtitle {
+        font-size: 2rem;
+    }
+
+    .home_overview {
+        font-size: 1rem;
+
+    }
+
+    .home_description {
+        font-size: .75rem;
+    }
+
+    .about_innovation h2 {
+        font-size: 25px;
+        padding-left: 5rem;
+    }
+
+    .about_innovation {
+        padding-top: 13rem;
+        position: relative;
+    }
+
+    .text_remark {
+        top: 25px;
+        position: relative;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .container_img {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        bottom: 3rem;
+        height: 280px;
+    }
+
+    .home_img img {
+        width: 2000px;
+        position: relative;
+    }
+
+    .home_title {
+        bottom: 4.5rem;
+        font-size: 4rem;
+    }
+
+    .home_subtitle {
+        margin-top: -80px;
+        font-size: 1.5rem;
+    }
+
+    .home_overview {
+        margin-top: 3rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #FFF;
+    }
+
+    .home_description {
+        font-size: .80rem;
+        text-align: justify;
+    }
+
+    .about_text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .about_text .col-md-6 h2 {
+        display: none;
+    }
+
+    .about_text>div {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .video-container {
+        margin-top: 0;
+    }
+
+    .about_text .col-md-6 h2 {
+        display: none;
+    }
+
+    .about_text .col-md-6 .text_remark {
+        margin-top: 0;
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .about_innovation {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .about_innovation .about_text {
+        margin-top: -30px;
+        height: auto;
+    }
+
+    .blob {
+        position: absolute;
+        top: 0;
+        left: 0;
+        fill: #FFB1A4;
+        width: 25rem;
+        z-index: -1;
+        animation: move 10s ease-in-out infinite;
+        transform-origin: 50% 50%;
+        overflow: hidden;
+    }
+
+    @keyframes move {
+        0% {
+            transform: scale(1) translate(10px, );
+        }
+
+        38% {
+            transform: scale(0.8, 1) translate(5vw, 2vh) rotate(160deg);
+        }
+
+        40% {
+            transform: scale(0.8, 1) translate(5vw, 2vh) rotate(160deg);
+        }
+
+        78% {
+            transform: scale(1.3) translate(0vw, 5vh) rotate(-20deg);
+        }
+
+        80% {
+            transform: scale(1.3) translate(0vw, 5vh) rotate(-20deg);
+        }
+
+        100% {
+            transform: scale(1) translate(10px, 20px);
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .container_img {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        bottom: 3rem;
+    }
+
+    .home_img img {
+        width: 50px;
+        position: relative;
+        height: 10px;
+    }
+
+    .home_title {
+        bottom: 4.5rem;
+        font-size: 0rem;
+        color: #FFF;
+        text-align: center;
+        left: -5px
+    }
+
+    .home_subtitle {
+        margin-top: -120px;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .home_overview {
+        margin-top: -25px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #FFF;
+        text-align: center;
+    }
+
+    .home_description {
+        font-size: .90rem;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(240, 22%, 32%);
+        color: #FFF;
+        padding: 0.8rem 1.1rem;
+        border-radius: 0.5rem;
+        width: 200px;
+        margin: auto;
+
+    }
+
+    .sponsor_img {
+        width: 120px;
+        border-radius: 10px;
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -4rem;
+    }
+
+    .about_text {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .about_text .col-md-6 h2 {
+        display: none;
+    }
+
+    .about_text .col-md-6 .text_remark {
+        margin-top: 0;
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .about_innovation {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .text_remark {
+        top: -4.5rem;
+        position: relative;
+    }
+
+    .icon_water {
+        position: relative;
+        bottom: 13rem;
+    }
+
+}
+
+
+
+.blob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #FFB1A4;
+    width: 20rem;
+    z-index: -1;
+    animation: move 10s ease-in-out infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1) translate(10px, -10px);
+    }
+
+    38% {
+        transform: scale(0.8, 1) translate(40vw, 4vh) rotate(160deg);
+    }
+
+    40% {
+        transform: scale(0.8, 1) translate(40vw, 4vh) rotate(160deg);
+    }
+
+    78% {
+        transform: scale(1.3) translate(0vw, 13vh) rotate(-20deg);
+    }
+
+    80% {
+        transform: scale(1.3) translate(0vw, 10vh) rotate(-20deg);
+    }
+
+    100% {
+        transform: scale(1) translate(10px, 30px);
+    }
+}
+
+
+/* Resetting the properties for smaller screens */
+@media screen and (max-width: 576px) {
+
+
+    .container_img {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        bottom: 3rem;
+    }
+
+    .home_title {
+        bottom: 5rem;
+        font-size: 0rem;
+        color: #FFF;
+        text-align: center;
+        left: -5px
+    }
+
+    .home_subtitle {
+        margin-top: -120px;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .home_overview {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #FFF;
+        text-align: center;
+    }
+
+    .home_description {
+
+        font-size: .80rem;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .sponsor_img {
+        width: 120px;
+
+        border-radius: 10px;
+        margin-top: 0;
+        padding-top: 6rem;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(240, 22%, 32%);
+        color: #FFF;
+        padding: 0.8rem 1.1rem;
+        border-radius: 0.5rem;
+        width: 200px;
+        margin: auto;
+    }
+
+    .about_text .col-md-6 h2 {
+        display: none;
+    }
+
+    .blob {
+        position: absolute;
+        top: 0;
+        left: 0;
+        fill: #FFB1A4;
+        width: 15rem;
+        z-index: -1;
+        animation: move 10s ease-in-out infinite;
+        transform-origin: 50% 50%;
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -4rem;
+    }
+
+    .about_text {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .about_text .col-md-6 h2 {
+        display: none;
+    }
+
+    .about_text .col-md-6 .text_remark {
+        margin-top: 0;
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .about_innovation {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .text_remark {
+        top: -4.5rem;
+        position: relative;
+    }
+
+    .icon_water {
+        position: relative;
+        bottom: 13rem;
+    }
+
+    @keyframes move {
+        0% {
+            transform: scale(1) translate(10px, -10px);
+        }
+
+        38% {
+            transform: scale(0.8, 1) translate(40vw, 4vh) rotate(160deg);
+        }
+
+        40% {
+            transform: scale(0.8, 1) translate(40vw, 4vh) rotate(160deg);
+        }
+
+        78% {
+            transform: scale(1.3) translate(0vw, 13vh) rotate(-20deg);
+        }
+
+        80% {
+            transform: scale(1.3) translate(0vw, 10vh) rotate(-20deg);
+        }
+
+        100% {
+            transform: scale(1) translate(10px, 30px);
+        }
+    }
+}

@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== Tab Icon ===============-->
+    <link rel="shortcut icon" href="assets/img/Apple_Store_logo.png">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== FONT AWESOME ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!--=============== CSS ===============-->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!--=============== Slick CSS ===============-->
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
+
+    <!--=============== JQuery Slick ===============-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--=============== JS Slick ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Responsive landing page headphones</title>
+</head>
+
+<style>
+    /*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
+
+
+/* PASENSYA NA KASI MAY MEDIA QUERIES KAHIT MAY BOOTSTRAP AAYUSIN KO TO SOON */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.my-custom-body {
+    font-family: 'Poppins', sans-serif;
+    font-size: .938rem;
+    background-color: hsl(206, 4%, 6%);
+    color: white;
+}
+
+.body {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: hsl(206, 4%, 6%) !important;
+}
+
+.navbar-brand img {
+    width: 2.5rem;
+    margin-right: 5px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 35px;
+
+}
+
+.ri-function-line {
+    background-color: white;
+
+}
+
+
+/* Layout */
+
+.main {
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #FFB1A4;
+    width: 20rem;
+    z-index: -1;
+    animation: move 10s ease-in-out infinite;
+    transform-origin: 50% 50%;
+}
+
+
+@keyframes move {
+    0% {
+        transform: scale(1) translate(10px, -10px);
+    }
+
+    38% {
+        transform: scale(0.8, 1) translate(80vw, 10vh) rotate(160deg);
+    }
+
+    40% {
+        transform: scale(0.8, 1) translate(80vw, 5vh) rotate(160deg);
+    }
+
+    78% {
+        transform: scale(1.3) translate(0vw, 20vh) rotate(-20deg);
+    }
+
+    80% {
+        transform: scale(1.3) translate(0vw, 20vh) rotate(-20deg);
+    }
+
+    100% {
+        transform: scale(1) translate(10px, 30px);
+    }
+}
+
+
+/*=============== HOME ===============*/
+
+.home_body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.home_img {
+    width: 550px;
+    position: relative;
+    border: #FFF;
+    border-radius: 50px;
+}
+
+.home_data {
+    padding-top: 2rem;
+}
+
+.home_header {
+    position: relative;
+}
+
+.home_title {
+    padding-left: 30px;
+    line-height: 6rem;
+    position: relative;
+    left: 20px;
+    font-size: 7.2rem;
+    background: linear-gradient(to right, #3E95CF 4%, #CF5BB4 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+}
+
+.home_subtitle {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.container_img {
+    width: 45%;
+}
+
+.home_data {
+    width: 50%;
+}
+
+
+/* buttons */
+
+.button {
+    background-color: hsl(240, 22%, 32%);
+    color: #FFF;
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+}
+
+.button:hover {
+    background-color: hsl(300, 16%, 47%);
+}
+
+.button_icon {
+    font-size: 1.2rem;
+}
+
+.button_flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .75rem;
+    text-decoration: none;
+}
+
+
+/* Sponsors */
+
+.sponsor_img {
+    width: 130px;
+    border-radius: 10px;
+    margin-top: 16rem;
+    margin-bottom: 3.5rem;
+
+
+}
+
+
+/* About page */
+
+.about_pagebody {
+    background-color: #EDE9E8;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+}
+
+.about_innovation {
+    padding-top: 235px;
+}
+
+.about_text h7 {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.about_text {
+    padding-top: 100px;
+    display: flex;
+
+}
+
+.text_remark {
+    top: 2.2rem;
+    position: relative;
+}
+
+.iphone_vid {
+    display: flex;
+    margin-top: 110px;
+}
+
+.icon_tough {
+    top: -16rem;
+    font-size: 5rem;
+}
+
+.icon_water {
+    color: #3E95CF;
+    font-size: 5rem;
+    bottom: 6rem;
+    position: relative;
+}
+
+
+/*Items page */
+
+.items_page {
+    height: auto;
+    overflow: hidden;
+}
+
+.container_items {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    border-radius: 50px;
+    border-color: #EDE9E8;
+    border-right-style: dotted;
+    border-left-style: dotted;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.text_overlay {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    margin-top: 6rem;
+    overflow: hidden;
+}
+
+.items_heading {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel img {
+    width: 30rem;
+}
+
+.card-title {
+    color: whitesmoke !important;
+    border-radius: 20px;
+    background: linear-gradient(90deg,
+            hsl(23, 4%, 28%) 0%,
+            hsl(23, 4%, 8%) 100%);
+    width: 75%;
+    padding: 0.5em;
+
+}
+
+.carousel .item img:not(:nth-child(2)) {
+    filter: blur(100px);
+}
+
+/* Footer */
+
+.footer_links {
+    list-style: none;
+    margin: 0;
+    padding-top: 1rem;
+    padding-left: 0;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: hsl(206, 4%, 75%);
+
+}
+
+.footer_logo img {
+    width: 2.5rem;
+    margin-right: 5px;
+}
+
+.footer_links li {
+    margin-bottom: 8px !important;
+}
+
+.footer_copyLink p {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 5.5rem;
+}
+
+.footer_social-link {
+    color: rgb(255, 255, 255);
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1399px) {
+
+    .home_title {
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 6rem;
+        line-height: 5rem;
+
+    }
+
+    .about_innovation {
+        padding-top: 148px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+    .home_title {
+        padding-top: 60px;
+        padding-left: 10px;
+        font-size: 5rem;
+        line-height: 5rem;
+
+
+    }
+
+    .home_img {
+        top: 3rem;
+        width: 430px;
+    }
+
+    .home_subtitle {
+        font-size: 2rem;
+    }
+
+    .home_overview {
+        font-size: 1rem;
+
+    }
+
+    .home_description {
+        font-size: .75rem;
+    }
+
+    .about_innovation h2 {
+        font-size: 25px;
+        padding-left: 5rem;
+    }
+
+    .about_innovation {
+        padding-top: 13rem;
+        position: relative;
+    }
+
+    .text_remark {
+        top: 25px;
+        position: relative;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .container_img {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        bottom: 3rem;
+        height: 280px;
+    }
+
+    .home_img img {
+        width: 2000px;
+        position: relative;
+    }
+
+    .home_title {
+        bottom: 4.5rem;
+        font-size: 4rem;
+    }
+
+    .home_subtitle {
+        margin-top: -80px;
+        font-size: 1.5rem;
+    }
+
+    .home_overview {
+        margin-top: 3rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #FFF;
+    }
+
+    .home_description {
+        font-size: .80rem;
+        text-align: justify;
+    }
+
+    .about_text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .about_text .col-md-6 h2 {
+        display: none;
+    }
+
+    .about_text>div {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .video-container {
+        margin-top: 0;
+    }
+
+    .about_text .col-md-6 h2 {
+        display: none;
+    }
+
+    .about_text .col-md-6 .text_remark {
+        margin-top: 0;
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .about_innovation {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .about_innovation .about_text {
+        margin-top: -30px;
+        height: auto;
+    }
+
+    .blob {
+        position: absolute;
+        top: 0;
+        left: 0;
+        fill: #FFB1A4;
+        width: 25rem;
+        z-index: -1;
+        animation: move 10s ease-in-out infinite;
+        transform-origin: 50% 50%;
+        overflow: hidden;
+    }
+
+    @keyframes move {
+        0% {
+            transform: scale(1) translate(10px, );
+        }
+
+        38% {
+            transform: scale(0.8, 1) translate(5vw, 2vh) rotate(160deg);
+        }
+
+        40% {
+            transform: scale(0.8, 1) translate(5vw, 2vh) rotate(160deg);
+        }
+
+        78% {
+            transform: scale(1.3) translate(0vw, 5vh) rotate(-20deg);
+        }
+
+        80% {
+            transform: scale(1.3) translate(0vw, 5vh) rotate(-20deg);
+        }
+
+        100% {
+            transform: scale(1) translate(10px, 20px);
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .container_img {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        bottom: 3rem;
+    }
+
+    .home_img {
+        width: 650px;
+        position: relative;
+    }
+
+    .home_title {
+        bottom: 4.5rem;
+        font-size: 0rem;
+        color: #FFF;
+        text-align: center;
+        left: -5px
+    }
+
+    .home_subtitle {
+        margin-top: -120px;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .home_overview {
+        margin-top: -25px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #FFF;
+        text-align: center;
+    }
+
+    .home_description {
+        font-size: .90rem;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(240, 22%, 32%);
+        color: #FFF;
+        padding: 0.8rem 1.1rem;
+        border-radius: 0.5rem;
+        width: 200px;
+        margin: auto;
+
+    }
+
+    .sponsor_img {
+        width: 120px;
+        border-radius: 10px;
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -4rem;
+    }
+
+    .about_text {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .about_text .col-md-6 h2 {
+        display: none;
+    }
+
+    .about_text .col-md-6 .text_remark {
+        margin-top: 0;
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .about_innovation {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .text_remark {
+        top: -4.5rem;
+        position: relative;
+    }
+
+    .icon_water {
+        position: relative;
+        bottom: 13rem;
+    }
+
+}
+
+
+
+.blob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #FFB1A4;
+    width: 20rem;
+    z-index: -1;
+    animation: move 10s ease-in-out infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1) translate(10px, -10px);
+    }
+
+    38% {
+        transform: scale(0.8, 1) translate(40vw, 4vh) rotate(160deg);
+    }
+
+    40% {
+        transform: scale(0.8, 1) translate(40vw, 4vh) rotate(160deg);
+    }
+
+    78% {
+        transform: scale(1.3) translate(0vw, 13vh) rotate(-20deg);
+    }
+
+    80% {
+        transform: scale(1.3) translate(0vw, 10vh) rotate(-20deg);
+    }
+
+    100% {
+        transform: scale(1) translate(10px, 30px);
+    }
+}
+
+
+/* Resetting the properties for smaller screens */
+@media screen and (max-width: 576px) {
+    
+    .container_img {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        bottom: 3rem;
+    }
+
+    .home_title {
+        bottom: 5rem;
+        font-size: 0rem;
+        color: #FFF;
+        text-align: center;
+        left: -5px
+    }
+
+    .home_subtitle {
+        margin-top: -120px;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .home_overview {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #FFF;
+        text-align: center;
+    }
+
+    .home_description {
+
+        font-size: .80rem;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .sponsor_img {
+        width: 120px;
+        border-radius: 10px;
+        margin-top: 0;
+        padding-top: 6rem;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(240, 22%, 32%);
+        color: #FFF;
+        padding: 0.8rem 1.1rem;
+        border-radius: 0.5rem;
+        width: 200px;
+        margin: auto;
+    }
+
+    .about_text .col-md-6 h2 {
+        display: none;
+    }
+
+    .blob {
+        position: absolute;
+        top: 0;
+        left: 0;
+        fill: #FFB1A4;
+        width: 15rem;
+        z-index: -1;
+        animation: move 10s ease-in-out infinite;
+        transform-origin: 50% 50%;
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -4rem;
+    }
+
+    .about_text {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .about_text .col-md-6 h2 {
+        display: none;
+    }
+
+    .about_text .col-md-6 .text_remark {
+        margin-top: 0;
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .about_innovation {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .text_remark {
+        top: -4.5rem;
+        position: relative;
+    }
+
+    .icon_water {
+        position: relative;
+        bottom: 13rem;
+    }
+
+    @keyframes move {
+        0% {
+            transform: scale(1) translate(10px, -10px);
+        }
+
+        38% {
+            transform: scale(0.8, 1) translate(40vw, 4vh) rotate(160deg);
+        }
+
+        40% {
+            transform: scale(0.8, 1) translate(40vw, 4vh) rotate(160deg);
+        }
+
+        78% {
+            transform: scale(1.3) translate(0vw, 13vh) rotate(-20deg);
+        }
+
+        80% {
+            transform: scale(1.3) translate(0vw, 10vh) rotate(-20deg);
+        }
+
+        100% {
+            transform: scale(1) translate(10px, 30px);
+        }
+    }
+}
+</style>
+
+<body class="my-custom-body">
+    <section class="home" id="home-page">
+        <div class="home_pagebody">
+            <div class="container-fluid px-0">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light nav_bar" id="navbar">
+                    <div class="container">
+                        <a class="navbar-brand ms-md-1 me-1 me-md-1" href="#">
+                            <img src="https://i.imgur.com/JIWRUME.png" alt="Logo">
+                        </a>
+
+                        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbar_nav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="ri-function-line"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end nav_menu" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#home-page" id="home">Home</a>
+                                </li>
+                                <li class="nav-item mx-sm-1 mx-md-1">
+                                    <a class="nav-link" href="#about-page" id="about">About</a>
+                                </li>
+                                <li class="nav-item mx-sm-1 mx-md-1">
+                                    <a class="nav-link" href="#items-page" id="items">Items</a>
+                                </li>
+                                <li class="nav-item mx-sm-1 mx-md-1">
+                                    <a class="nav-link" href="#">CHECK OUT </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div class="blob">
+            <!-- This SVG is from https://codepen.io/Ali_Farooq_/pen/gKOJqx -->
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 310 350">
+                <path
+                    d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z" />
+            </svg>
+        </div>
+
+        <div class="container mt-5 main home_body">
+            <div class="row -d-flex justify-content-center row_img">
+                <div class="col-md-6 mt-5 container_img">
+                    <!-- Column for the image -->
+                    <img src="https://i.imgur.com/n09AMPC.png" class="img-fluid home_img" id="home-img">
+                </div>
+
+                <div class="w-100 d-md-none d-sm-block "></div>
+                <div class="col-md-6 mt-5 home_data">
+                    <div class=" col-md-12 home_header">
+                        <!-- Column for the text -->
+                        <h1 class=" col-lg-12 home_title">Exclusive</h1>
+                        <h2 class=" col-12 col-md-6 home_subtitle">Iphone 15</h2>
+                    </div>
+
+                    <div class="col-md-12">
+                        <h3 class="home_overview">Overview</h3>
+                        <p class="home_description">The innovative new design features back glass that has color infused
+                            throughout
+                            the material. A custom dual ion‑exchange process for the glass, and aerospace-
+                            grade aluminum edges, help make iPhone 15 incredibly durable.
+                        </p>
+                        <a href="#" class="button button_flex just">
+                            <span class="button_flex">
+                                <i class="ri-shopping-bag-line button_icon"></i></i> Add to Bag
+                            </span>
+                            <span class="home__price">$299</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-3 d-flex justify-content-center align-items-center ">
+                        <!-- Column for the first sponsor image -->
+                        <img src="https://i.imgur.com/1xz9e9j.png" class="img-fluid sponsor_img" id="home-img1">
+                    </div>
+                    <div class="col-md-3 col-3 d-flex justify-content-center align-items-center">
+                        <!-- Column for the second sponsor image -->
+                        <img src="https://i.imgur.com/M5Tv4nG.png" class="img-fluid sponsor_img" id="home-img2">
+                    </div>
+                    <div class="col-md-3 col-3 d-flex justify-content-center align-items-center">
+                        <!-- Column for the second sponsor image -->
+                        <img src="https://i.imgur.com/ywiwcbR.png" class="img-fluid sponsor_img" id="home-img2">
+                    </div>
+                    <div class="col-md-3 col-3 d-flex justify-content-center align-items-center">
+                        <!-- Column for the second sponsor image -->
+                        <img src="https://i.imgur.com/OO86Vvr.png" class="img-fluid sponsor_img" id="home-img2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- About Page -->
+    <section class="about" id="about-page">
+        <div class="about_pagebody">
+            <div class="container about_page">
+                <div class="row about_text">
+                    <div class="col-12 col-md-6 about_color">
+                        <h1>Color through and through. Tough all around.</h1>
+                        <div class="video_container mx-auto d-flex justify-content-center">
+                            <!-- <iframe class="imgur-embed" width="100%" height="450" frameborder="0" src="https://i.imgur.com/jF8dgtH.gifv#embed"></iframe> -->
+                            <img class="iphone_vid" src="https://i.imgur.com/StnWVuX.gif" width="100%" alt="">
+
+                        </div>
+                        <h7 class="mt-3">Dependably durable The Ceramic Shield front is tougher than any smartphone
+                            glass</h7>
+                        <div class="position-relative d-flex justify-content-center mt-5">
+                            <i class="ri-shield-star-line position-absolute icon_tough"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-end about_innovation position-relative">
+                        <h2>The innovative new design features back glass that has color infused throughout the
+                            material. A custom dual ion‑exchange process for the glass, and aerospace-grade aluminum
+                            edges, help make iPhone 15 incredibly durable.</h2>
+                        <h7 class="mt-5 mb-4 text_remark">Remarkably resistant. iPhone is splash, water, and dust
+                            resistant. What a relief.</h7>
+                        <div class="position-relative d-flex justify-content-center mt-5">
+                            <i class="ri-drop-line position-absolute icon_water"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Items Page -->
+    <section class="slider items_page" id="items-page">
+        <div class="text_overlay">
+            <h2 class="items_heading">CHECK DIFFERENT VARIANTS</h2>
+        </div>
+        <div class="container position-relative container_items">
+            <div class="carousel">
+                <div>
+                    <div class="card" style="background-color:hsl(206, 4%, 6%) !important;">
+                        <img src="https://i.imgur.com/s9tzqhx.png" alt="" class="card-img-top">
+                        <div class="card-body  d-flex justify-content-center">
+                            <h5 class="card-title text-center"> iPhone 15 Pro Max Black </h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="background-color:hsl(206, 4%, 6%) !important;">
+                        <img src="https://i.imgur.com/9kvzYaf.png" alt="" class="card-img-top">
+                        <div class="card-body  d-flex justify-content-center">
+                            <h5 class="card-title  text-center "> iPhone 15 Pro Max Blue </h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="background-color:hsl(206, 4%, 6%) !important;">
+                        <img src="https://i.imgur.com/jWybLxW.png" alt="" class="card-img-top">
+                        <div class="card-body  d-flex justify-content-center">
+                            <h5 class="card-title text-center"> iPhone 15 Pro Max Natural </h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="background-color:hsl(206, 4%, 6%) !important;">
+                        <img src="https://i.imgur.com/kYloozn.png" alt="" class="card-img-top">
+                        <div class="card-body  d-flex justify-content-center">
+                            <h5 class="card-title text-center"> iPhone 15 Pro Max White </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Page -->
+    <footer class="footer section">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-2">
+                    <a href="#" class="footer_logo">
+                        <div class="footer_logo">
+                            <img src="https://i.imgur.com/JIWRUME.png" alt="">
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-3">
+                    <div class="footer_content">
+                        <h3 class="footer_title">Products</h3>
+                        <ul class="footer_links">
+                            <li><a href="#" class="footer_link pt-5 pb-5">Headphones</a></li>
+                            <li><a href="#" class="footer_link">Earphones</a></li>
+                            <li><a href="#" class="footer_link">Earbuds</a></li>
+                            <li><a href="#" class="footer_link">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="footer_content">
+                        <h3 class="footer_title">Support</h3>
+                        <ul class="footer_links">
+                            <li><a href="#" class="footer_link ">Product help</a></li>
+                            <li><a href="#" class="footer_link">Register</a></li>
+                            <li><a href="#" class="footer_link">Updates</a></li>
+                            <li><a href="#" class="footer_link">Provides</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="footer_content">
+                        <form action="" class="footer_form">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                                    aria-describedby="button-addon2">
+                                <button class="btn bg-dark btn-dark" type="button" id="button-addon2">Subscribe</button>
+                            </div>
+                        </form>
+                        <div class="footer_social">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer_social-link">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer_social-link">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer_social-link">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-12">
+                    <p class="footer_copy">
+                        <div class="footer_copyLink">
+                            <p>
+                                © With the help of Pronggi and Vincent. All right reserved
+                            </p>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--=============== SCROLL REVEAL ===============-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+
+
+<!--=============== MAIN JAVA SCRIPT ===============-->
+<script>
+    /*=============== SHOW SCROLL UP ===============*/
+    function scrollUp() {
+        const scrollUp = document.getElementById('scroll-up');
+        // When the scroll is higher than 200 viewport height, add the show-scroll class to the a tag with the scroll-top class
+        if (this.scrollY >= 200) scrollUp.classList.add('show-scroll');
+        else scrollUp.classList.remove('show-scroll')
+    }
+    window.addEventListener('scroll', scrollUp)
+
+
+    // Get all sections with an ID attribute
+    const sections = document.querySelectorAll('section[id]');
+
+    // Function to add or remove active class based on scrolling
+    function scrollActive() {
+        const scrollY = window.pageYOffset;
+
+        sections.forEach((current) => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 50;
+            const sectionId = current.getAttribute('id');
+
+            const navLink = document.querySelector('.nav_menu a[href*=' + sectionId + ']');
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                navLink.classList.add('active-link');
+            } else {
+                navLink.classList.remove('active-link');
+            }
+        });
+    }
+
+    /*=============== CAROUSEL ===============*/
+    $(document).ready(function () {
+        $('.carousel').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            centerMode: true,
+            variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: $('.carousel-prev'),
+            nextArrow: $('.carousel-next'),
+        });
+    });
+
+
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Listen for scroll events and run the scrollActive function
+    window.addEventListener('scroll', scrollActive);
+
+    /*=============== SCROLL REVEAL ANIMATION ===============*/
+    const sr = ScrollReveal({
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+        // reset: true
+    })
+
+    sr.reveal(`.home_header`, {
+        delay: 600
+    })
+    sr.reveal(`.home_overview, .home_description, .button `, {
+        delay: 700
+    })
+    sr.reveal(`.home_img, .iphone_vid, .blob`, {
+        delay: 900,
+        origin: 'top'
+    })
+
+    sr.reveal(`.sponsor_img, .about_color, .products__card, .footer_logo, .footer_content, .footer_copy`, {
+        origin: 'top',
+        interval: 100
+    })
+    sr.reveal(`.items_heading, .about_innovation, .discount__animate`, {
+        origin: 'right',
+        interval: 100
+    })
+    sr.reveal(`.carousel, .discount__img`, {
+        origin: 'bottom',
+        interval: 300
+    })
+    sr.reveal(`.case__img`, {
+        origin: 'top'
+    })
+    sr.reveal(`.case__data`)
+</script>
+</body>
+</html>
